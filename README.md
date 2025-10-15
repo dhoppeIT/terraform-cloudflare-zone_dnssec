@@ -29,7 +29,7 @@ module "cloudflare_zone" {
 }
 
 module "cloudflare_zone_dnssec" {
-  source  = "gitlab.com/terraform-child-modules-48151/terraform-cloudflare-zone_dnssec/local"
+  source  = "gitlab.com/terraform-child-modules-48151/terraform-cloudflare-zone-dnssec/local"
   version = "1.0.0"
 
   zone_id = module.cloudflare_zone["dhoppe.dev"].id
